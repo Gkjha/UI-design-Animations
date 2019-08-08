@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EE0055</color>
+    <color name="colorPrimaryDark">#B8BABC</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="background_color">#F6F8FB</color>
+
+    <color name="fontColor_dark">#181818</color>
+    <color name="fontColor_light">#ADB4B9</color>
+    <color name="white">#ffffff</color>
+
+    <color name="roundedBottomSheetPrimaryNavigationBarColor">#000000</color>
+
+    <color name="roundedBottomSheetPrimaryBackground">#F6F8FB</color>
+
+</resources>

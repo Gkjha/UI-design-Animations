@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bookFlightPopup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/bookId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_horizontal"
+            android:text="Book Your Flight"
+            android:textColor="@color/fontColor_dark"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookId">
+
+            <EditText
+                android:id="@+id/search_barFrom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/search_background"
+                android:elevation="2dp"
+                android:hint="From"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/search_barTo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/search_barFrom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/search_background"
+                android:elevation="2dp"
+                android:hint="To"
+                android:padding="10dp" />
+
+            <DatePicker
+                android:id="@+id/datePickerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_barTo"
+                android:layout_centerInParent="true"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner">
+
+
+            </DatePicker>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/datePickerId"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/search_background"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="@font/montserrat"
+                android:text="Proceed"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

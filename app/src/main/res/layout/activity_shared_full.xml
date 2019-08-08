@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="#ffffff"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/placeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Leh Ladakh"
+                android:textColor="@color/fontColor_dark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:transitionName="nameTransition" />
+
+            <TextView
+                android:id="@+id/placeDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placeName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/montserrat"
+                android:text="3 days 2 night"
+                android:textSize="12sp"
+                android:transitionName="durationTransition" />
+
+
+            <TextView
+                android:id="@+id/placePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="10K"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:transitionName="priceTransition" />
+
+            <TextView
+                android:id="@+id/placeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placeName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Leh, a high-desert city in the Himalayas, is the capital of the Leh region in northern India’s Jammu and Kashmir state"
+                android:textAlignment="center"
+                android:textColor="@color/fontColor_light"
+                android:textSize="14sp"
+                android:transitionName="durationTransition" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/search_background"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Explore"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/placeImageId"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="50dp"
+        android:transitionName="imageTransition"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lehladakh" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

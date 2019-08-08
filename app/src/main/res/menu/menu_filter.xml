@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/India"
+        android:title="India"
+        android:icon="@drawable/ic_action_name"></item>
+    <item
+        android:id="@+id/foreign"
+        android:title="Foreign Trip"
+        android:icon="@drawable/ic_globe"></item>
+    <item
+        android:id="@+id/adventure"
+        android:title="Adventure"
+        android:icon="@drawable/ic_adventure"></item>
+    <item
+        android:id="@+id/sports"
+        android:title="Sports"
+        android:icon="@drawable/ic_sports"></item>
+</menu>
